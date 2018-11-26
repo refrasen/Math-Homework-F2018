@@ -87,3 +87,23 @@ the number of zeros we have in the first quadrant is $1$, so that means
 
 Therefore, one zero in each quadrant.
 
+##### Chapter VIII, Sec. 2 ex. 2
+
+How many roots does $z^9 + z^5 - 8z^3 + 2z + 1$ have between the circles {$|z| = 1$} and {$|z| = 2$}
+
+Let $D$ be the region bounded by the two circles
+
+Goal: find $f(z), h(z)$ analytic on $D$ and $\partial D$ with $|h(z)| < |f(z)|$ for $z \in \partial D$
+
+$f(z) = z^9 + z^5 - 8z^3$, $h(z) = 2z + 1$
+
+for $|z| = 1$:
+
+$|h(z)| = |2z + 1| \leq 2|z| + 1 = 3$
+
+$|f(z)| = |z^9 + z^5 - 8z^3| \geq |z^9 + z^5| - 8|z^3|$
+
+
+
+##### Chapter VIII, Sec. 2 ex. 8
+

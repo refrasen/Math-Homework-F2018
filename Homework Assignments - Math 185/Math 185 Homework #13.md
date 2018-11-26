@@ -203,26 +203,20 @@ so we must have $6$ roots lying in between the circle of radius 1 and the circle
 
 ##### Chapter VIII, Sec. 2 ex. 8
 
-Let $D$ be a bounded domain, and let $f(z)$ and $h(z)$ be meromorphic functions on $D$ that extend to be analytic on $\partial D$. Suppose that $|h(z)| \leq |f(z)|$ on $\partial D$. Show by example that $f(z)$ and $f(z) + h(z)$ can have different numbers of zeros on $D$. What can be said about $f(z)$ and $f(z)+h(z)$
+Let $D$ be a bounded domain, and let $f(z)$ and $h(z)$ be meromorphic functions on $D$ that extend to be analytic on $\partial D$. Suppose that $|h(z)| < |f(z)|$ on $\partial D$. Show by example that $f(z)$ and $f(z) + h(z)$ can have different numbers of zeros on $D$. What can be said about $f(z)$ and $f(z)+h(z)$? Prove your assertion.
 
-if $|h(z_0)| = |f(z_0)|$ at some point $z_0$
-
-then it is possible that $1 + h(z_0)/f(z_0) = 0$, so the $\arg(1 + h(z)/f(z))$ around a closed boundary curve may not be $0$
-
-$f(z) = -h(z)$, for any polynomial
-
-e.g.:
+We still have that the increase in argument for $f(z)$ is the same as for $f(z) +h(z)$
 
 $f(z) = z$
 
-$h(z) = -z$
+$h(z) = \frac{1}{2z}$
 
-$|f(z)| = |h(z)|$ for all $z$ $\in \C$ 
+$D$ is the region inside the unit circle
 
-$f(z)$ has $1$ zero at $0$ 
+$f(z)$ has one zero in $D$ at $0$ 
 
-but $f(z)+h(z) = z -z = 0$ has infinitely many zeros
+$h(z)$ has an isolated singularity at $z = 0$ and is otherwise analytic on $\partial D$
 
-$f(z)$ and $h(z)$ have the same number of zeros and the same number of poles
 
-##### Chapter VIII, Sec. 3 ex. 4
+
+##### Chapter VIII, Sec. 3 ex. 2

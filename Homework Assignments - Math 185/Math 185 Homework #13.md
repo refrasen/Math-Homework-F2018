@@ -205,8 +205,6 @@ so we must have $6$ roots lying in between the circle of radius 1 and the circle
 
 Let $D$ be a bounded domain, and let $f(z)$ and $h(z)$ be meromorphic functions on $D$ that extend to be analytic on $\partial D$. Suppose that $|h(z)| < |f(z)|$ on $\partial D$. Show by example that $f(z)$ and $f(z) + h(z)$ can have different numbers of zeros on $D$. What can be said about $f(z)$ and $f(z)+h(z)$? Prove your assertion.
 
-We still have that the increase in argument for $f(z)$ is the same as for $f(z) +h(z)$
-
 $f(z) = z$
 
 $h(z) = \frac{1}{2z}$
@@ -217,6 +215,86 @@ $f(z)$ has one zero in $D$ at $0$
 
 $h(z)$ has an isolated singularity at $z = 0$ and is otherwise analytic on $\partial D$
 
+on $\partial D$, $|z| = 1$
 
+$|f(z)| = |z| = 1$
+
+$|h(z)| = \frac{1}{2|z|} = \frac{1}{2} < |f(z)| = 1$ 
+
+$f(z)+h(z) = z + \frac{1}{2z}$ for $|z| < 1$ has 2 zeros:
+
+$z + \frac{1}{2z} = 0 \equiv z^2 + \frac{1}{2} = 0$
+
+$z = \sqrt{-1/2} = \pm i/\sqrt{2}$, which are both in the unit circle
+
+We still have that the increase in argument for $f(z)$ is the same as for $f(z) +h(z)$
+
+so $\int d \arg (f(z)) = \int d\arg(f(z)+h(z))$
+
+and these are each equal to $2\pi(N_0 - N_\infin)$ (for respective $N_0$, $N_{\infin}$)
+
+so while they may not have the same number of zeros, they have the same value for $N_0 - N_{\infin}$ :
+
+$f(z$): $N_0 = 1$, $N_{\infin} = 0$
+
+$f(z)+h(z): N_0 = 2, N_{\infin} = 1$
 
 ##### Chapter VIII, Sec. 3 ex. 2
+
+Let $S$ be the family of univalent functions $f(z)$ defined on the open unit disk {$|z| <1$} that satisfy $f(0)= 0$ and $f'(0)=1$. Show that $S$ is closed under normal convergence, that is, if a sequence in $S$ converges normally to $f(z)$, then $f \in S$.
+
+Remark: It is also true, but more difficult to prove, that $S$ is a compact family of analytic functions, that is, every sequence in $S$ has a normally convergent subsequence.
+
+Univalent: analytic and one-to-one on a domain $D$ (in this case the open unit disk)
+
+let {$f_k(z)$} be a sequence of univalent functions on the open disk.
+
+We know that the sequence converges normally to a function $f(z)$ that is either univalent or constant
+
+for each $f_k(z)$, $f_k(0) = 0$, $f_k'(0)= 1$ 
+
+for any $k$, $f_k(z)$ has at least one zero at $0$ and we must have that the zeros of the functions in the  sequence converge to the zeros of the limit function, 
+
+so $f(z)$ must have at least one zero at $0$ 
+
+---
+
+also, by the theorem on page 137, 
+
+the sequence of first derivatives {$f_k'(z)$} also converges normally to $f'(z)$
+
+if we were to take $f_k'(z)-1$ as a new sequence
+
+since converging normally means to converge uniformly on any closed disk in $D$:
+
+if {${f_k}(z)$}, {$g_k(z)$} each converge uniformly to $f(z), g(z)$ respectively
+
+$\implies$ $|f_j(x)-f(x)| \leq \epsilon_j$ for all $x \in D$ , $|g_j(x)-g(x)| \leq \delta_j$
+
+with $\epsilon_j, \delta_j \rightarrow 0$ as $j \rightarrow \infin$ 
+
+and so we have $\epsilon_j + \delta_j \rightarrow 0$ 
+
+taking $|f_j(x)+g_j(x)-(f(x)+g(x))| = |f_j(x)-f(x)+g_j(x)-g(x)| \leq \epsilon_j + \delta_j$ by triangle inequality, so $f_k +g_k \rightarrow f+g$ 
+
+therefore:${f_k'(z)-1}$ would converge normally to $f'(z)-1$
+
+and since these functions have a zero at $0$, by the same logic as above
+
+since $f_k'(0)-1 = 0$ for all $k$ and the zeros of $f'_k-1$ converge to the zeros of $f'-1$
+
+$0$ is a zero for $f'(z)-1$ $\implies$ $f'(0) = 1$ 
+
+##### Chapter VIII, Sec 4, ex. 4
+
+Let $f(z)$ be an analytic function on the open unit disk $D =$ {$|z| <1$}. Suppose there is an annulus $U =$ {$r < |z| < 1$} such that the restriction of $f(z)$ to $U$ is one-to-one. Show that $f(z)$ is one-to-one on $D​$ 
+
+for each $w_0$ in $f(U)$, there is exactly one $z_0 \in U$ such that $f(z_0) = w_0$ 
+
+in some open disk with radius $\rho$ around each $z_0$ $\in U$, the values of $f(z)$ on this disk include the disk centered at $w_0$ of some radius $\delta$ so that $N(w) = N(w_0)$ for $|w - w_0| < \delta$
+
+let $N(w_0) = m$, and since $f$ is 1-1 on $U$:
+
+on $U$: $f(z) -w_0= (z-z_0)^mg(z)$ for some function $g(z)$ that is analytic at $z_0$ and $g(z_0) \neq 0$
+
+ 

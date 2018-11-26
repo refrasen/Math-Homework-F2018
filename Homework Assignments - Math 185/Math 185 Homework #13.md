@@ -293,6 +293,30 @@ Let $f(z)$ be an analytic function on the open unit disk $D =$ {$|z| <1$}. Suppo
 
 Let $S$ be the set of all $z$ such that there exist no other point in $D$ such that its image is $f(z)$ 
 
+let $z_k$ be a sequence of complex numbers in $U$ that converge to some point $\zeta$ with $|\zeta| = 1$ 
+
+$f(z) - f(z_k)$ is a one-to-one function on $U$:
+
+suppose distinct points $z'_1, z'_2 \in U$ satisfy $f(z'_1)  - f(z_k) = f(z'_2) - f(z_k)= w$
+
+$\implies$ $f(z_1') - f(z_k) - f(z'_2) + f(z_k) = 0$
+
+$\implies$ $f(z_1') - f(z_2') = 0$ $\implies $$f(z_1') = f(z_2')$, a contradiction 
+
+so the sequence of function $f(z) -f(z_k)$ is a sequence of univalent functions
+
+converging to $f(z) - f(\zeta)$
+
+$|f(z)-f(z_j)-f(z) - f(\zeta)| = |f(z_j)-f(\zeta)| \rightarrow 0$ for any $z$ in any closed subset in $U$ 
+
+so $f(z) - f(z_k)$ converges normally to $f(z) - f(\zeta)$ 
+
+which means $f(z) - f(\zeta)$ is univalent or constant
+
+if it is constant, that implies that $f(z)$ is constant, a contradiction since it is one-to-one on $U$
+
+so $f(z) - f(\zeta)$ is one-to-one and analytic 
+
 ##### Chapter VIII, Sec 4, ex. 6
 
 Let $f(z)$ be a meromorphic function on the complex plane, and suppose there is an integer $m$ such that $f^{-1}(w)$ has at most $m$ points for all $w \in \C$. Show that $f(z)$ is a rational function.
@@ -305,7 +329,7 @@ so since there are finitely many points such that $f(z)-w_0 \rightarrow 0$
 
 $1/(f(z)-w_0)$ as $z \rightarrow \infin$ is bounded, which means $1/(f(z)-w_0)$ has a removable singularity at $\infin$ 
 
-so $1/(f(z)-w_0)$ is analytic at $\infin​$
+so $1/(f(z)-w_0)$ is analytic at $\infin$
 
 which means that $\infin$ is a pole of $f(z)-w_0$, so $f(z)-w_0$ is meromorphic on $\C^*$ 
 

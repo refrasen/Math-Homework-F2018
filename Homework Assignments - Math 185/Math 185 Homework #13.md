@@ -291,12 +291,26 @@ Let $f(z)$ be an analytic function on the open unit disk $D =$ {$|z| <1$}. Suppo
 
  "Suppose that $f(z)$ is analytic across $\partial D$, and consider the set of $z$ $\in D$ whose image $f(z)$ is not the image of any other point in $D$"
 
+Let $S$ be the set of all $z$ such that there exist no other point in $D$ such that its image is $f(z)$ 
+
 ##### Chapter VIII, Sec 4, ex. 6
 
 Let $f(z)$ be a meromorphic function on the complex plane, and suppose there is an integer $m$ such that $f^{-1}(w)$ has at most $m$ points for all $w \in \C$. Show that $f(z)$ is a rational function.
 
-i.e., the highest number of times that any $w$ $\in \C$ is attained is $m$ 
+let $w_0$ be a point in $\C$ such that there are in $f^{-1}(w_0)$ the maximum number of points $z$ such that $f(z)= w_0$ 
 
-"Choose $w_0$ such that the number of points in $f^{-1}(w_0)$ is maximum. Then $f(z)$ attains values $w$ near $w_0$ only near points in $f^{-1}(w_0), 1/(f(z)-w_0)$ is bounded at $\infin$, and $f(z)$ is meromorphic on $\C^*$ hence, rational"
+since all other values of $w$ can only be achieved at a number of points less than the number of points that achieve $w_0$, we have that only near the points in $f^{-1}(w_0)$ does $f(z) = w$ 
 
-let $w_0$ be a point in $\C$ such that there are $f^{-1}(w_0)$ the maximum number of points $z$ such that $f(z)= w_0$ 
+so since there are finitely many points such that $f(z)-w_0 \rightarrow 0$
+
+$1/(f(z)-w_0)$ as $z \rightarrow \infin$ is bounded, which means $1/(f(z)-w_0)$ has a removable singularity at $\infin$ 
+
+so $1/(f(z)-w_0)$ is analytic at $\infin​$
+
+which means that $\infin$ is a pole of $f(z)-w_0$, so $f(z)-w_0$ is meromorphic on $\C^*$ 
+
+and since sums of meromorphic functions are meromorphic:
+
+$w_0$ is meromorphic on $\C^*$ since it is bounded everywhere and at infinity
+
+so $f(z)-w_0 + w_0 = f(z)$ is meromorphic on $\C^*$ and therefore, rational by the theorem on page 179

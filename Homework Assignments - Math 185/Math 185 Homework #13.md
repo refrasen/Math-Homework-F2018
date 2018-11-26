@@ -317,13 +317,27 @@ we'd get a curve that starts and ends at the same point (closed)
 
 and since $f(z)$ is one-to-one on the annulus, simple
 
+let $z_0$ be a point such that $|z| < \rho$ 
+
+we have that $f(z) - f(z_0)$ has a zero of order $m$, 
+
+(since on $|z| = \rho$, $f(z)$ is one-to-one, we have $f(z) - f(z_0)\neq 0$, else a contradiction to one-to-one)
+
+$\int_{|z| = \rho} \frac{f'(z)}{f(z)-f(z_0)}dz = 2\pi (m) $ (since $f(z)-f(z_0)$ is analytic in $D$, there's no singularities)
+
+since the curve of $f(\gamma)$ is a simple closed curve, it must only travel around origin once.
+
+The increase in argument is therefore $2\pi$ 
+
+so $m = 1$, which means each point in $f(D)$ has exactly 1 preimage 
+
 ##### Chapter VIII, Sec 4, ex. 6
 
 Let $f(z)$ be a meromorphic function on the complex plane, and suppose there is an integer $m$ such that $f^{-1}(w)$ has at most $m$ points for all $w \in \C$. Show that $f(z)$ is a rational function.
 
 ---
 
-let $w_0​$ be a point in $\C​$ such that there are in $f^{-1}(w_0)​$ the maximum number of points $z​$ such that $f(z)= w_0​$ 
+let $w_0$ be a point in $\C$ such that there are in $f^{-1}(w_0)$ the maximum number of points $z$ such that $f(z)= w_0$ 
 
 since all other values of $w$ can only be achieved at a number of points less than the number of points that achieve $w_0$, we have that only near the points in $f^{-1}(w_0)$ does $f(z) = w$ 
 

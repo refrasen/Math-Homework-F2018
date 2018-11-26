@@ -97,13 +97,81 @@ Goal: find $f(z), h(z)$ analytic on $D$ and $\partial D$ with $|h(z)| < |f(z)|$ 
 
 $f(z) = z^9 + z^5 - 8z^3$, $h(z) = 2z + 1$
 
+---
+
+I want to use the property:
+
+$|a-b| \geq ||a| - |b||$ but to prove it I need to show:
+
+if $a, b \in \R$ with $b \geq 0$ then:
+
+$|a| \leq b \iff -b \leq a \leq b$
+
+Proof:
+
+let $|a| \leq b$ $\equiv $ $-|a| \geq -b$
+
+$\implies$ since $-|a| \leq a \leq |a|$
+
+we immediately get $ -b \leq a \leq b$
+
+Let $-b \leq a \leq b$:
+
+$a$ is either $ = -|a|$ or $= |a|$ 
+
+if $a = |a|$:
+
+$|a| \leq b$ as desired
+
+if $a = -|a|$
+
+then $-|a| \geq - b$ $\equiv$ $|a| \leq b$ 
+
+so proving $|a-b| \geq ||a| - |b||$:
+
+using triangle inequality:
+
+$|a - b + b| = |a| \leq |a-b| + |b|$ $\equiv$ $|a| - |b| \leq |a-b|$ 
+
+$|b-a + a| = |b| \leq |b-a| + |a| = |a-b| + |a| \equiv |b| - |a| \leq |a-b|$ $\equiv$ $|a| - |b| \geq - |a-b|$ 
+
+so $-|a-b| \leq |a| - |b| \leq |a-b|$  $\implies$ $||a| - |b|| \leq |a-b|$ 
+
+---
+
 for $|z| = 1$:
 
 $|h(z)| = |2z + 1| \leq 2|z| + 1 = 3$
 
-$|f(z)| = |z^9 + z^5 - 8z^3| \geq |z^9 + z^5| - 8|z^3|$
+$|f(z)| = |z^9 + z^5 - 8z^3| \geq ||z^9 + z^5| - |8z^3||$
 
+since $|z| = 1$, $|z^k| = 1$ for any $k \in \N$ 
 
+so $z^9$ and $z^5$ are on the unit circle still and the longest length the resultant vector from adding any two vectors of length one gets is $2$
+
+since $|z^9 + z^5| - 8$ gets smaller the closer $|z^9 + z^5|$ gets to $8$, and the closest it gets to $8$ is $2$:
+
+so $||z^9+z^5|-|8z^3||= ||z^9+z^5| - 8| \geq 6$ 
+
+so $|f(z)| > |h(z)|$ on $|z| = 1$
+
+$|z| = 2$:
+
+$|h(z)| = |2z +1| \leq 2|z| + 1 = 5$
+
+$|f(z)| \geq ||z^9 + z^5| - |8z^3||$ $ = ||z^9+z^5|-64|$
+
+$z^9$ will have length $2^9$ and $z^5$ will have length $2^5$ 
+
+again, $|z^9 + z^5|$ $-64$ gets smaller in magnitude to the closer $|z^9 + z^5|$ gets to $64$
+
+the smallest we can get from adding two vectors of these lengths, $2^9$ and $2^5$ is $480$
+
+and $480 - 64 = 416$
+
+so $|f(z)| \geq 416 $ for $|z| = 2$ so $|f(z)| > |h(z)|$ on $|z| = 2$
+
+the number of zeros $z^9 + z^5 - 8z^3$ has
 
 ##### Chapter VIII, Sec. 2 ex. 8
 

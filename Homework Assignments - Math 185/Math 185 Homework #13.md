@@ -10,6 +10,8 @@ Math 185
 
 Show that $z^4 + 2z^2 - z + 1$ has exactly one root in each quadrant:
 
+---
+
 This is a polynomial with real coefficients and no real zeros, 
 
 $z^4 + 2z > 0$ for all $z \in \R$
@@ -90,6 +92,8 @@ Therefore, one zero in each quadrant.
 ##### Chapter VIII, Sec. 2 ex. 2
 
 How many roots does $z^9 + z^5 - 8z^3 + 2z + 1$ have between the circles {$|z| = 1$} and {$|z| = 2$}
+
+---
 
 Let $D$ be the region bounded by the two circles
 
@@ -205,6 +209,8 @@ so we must have $6$ roots lying in between the circle of radius 1 and the circle
 
 Let $D$ be a bounded domain, and let $f(z)$ and $h(z)$ be meromorphic functions on $D$ that extend to be analytic on $\partial D$. Suppose that $|h(z)| < |f(z)|$ on $\partial D$. Show by example that $f(z)$ and $f(z) + h(z)$ can have different numbers of zeros on $D$. What can be said about $f(z)$ and $f(z)+h(z)$? Prove your assertion.
 
+---
+
 $f(z) = z$
 
 $h(z) = \frac{1}{2z}$
@@ -244,6 +250,8 @@ $f(z)+h(z): N_0 = 2, N_{\infin} = 1$
 Let $S$ be the family of univalent functions $f(z)$ defined on the open unit disk {$|z| <1$} that satisfy $f(0)= 0$ and $f'(0)=1$. Show that $S$ is closed under normal convergence, that is, if a sequence in $S$ converges normally to $f(z)$, then $f \in S$.
 
 Remark: It is also true, but more difficult to prove, that $S$ is a compact family of analytic functions, that is, every sequence in $S$ has a normally convergent subsequence.
+
+---
 
 Univalent: analytic and one-to-one on a domain $D$ (in this case the open unit disk)
 
@@ -289,39 +297,33 @@ $0$ is a zero for $f'(z)-1$ $\implies$ $f'(0) = 1$
 
 Let $f(z)$ be an analytic function on the open unit disk $D =$ {$|z| <1$}. Suppose there is an annulus $U =$ {$r < |z| < 1$} such that the restriction of $f(z)$ to $U$ is one-to-one. Show that $f(z)$ is one-to-one on $D$ 
 
- "Suppose that $f(z)$ is analytic across $\partial D$, and consider the set of $z$ $\in D$ whose image $f(z)$ is not the image of any other point in $D$"
+---
 
-Let $S$ be the set of all $z$ such that there exist no other point in $D$ such that its image is $f(z)$ 
+let $z_0 \in U$ and $f(z_0) = w_0$
 
-let $z_k$ be a sequence of complex numbers in $U$ that converge to some point $\zeta$ with $|\zeta| = 1$ 
+then $f(z)$ attains $w_0$ only at $z_0$ some number $m (\geq 1)$ times
 
-$f(z) - f(z_k)$ is a one-to-one function on $U$:
+in some open disk centered on $z_0$, we have that there is an open disk centered on $w_0$ such that
 
-suppose distinct points $z'_1, z'_2 \in U$ satisfy $f(z'_1)  - f(z_k) = f(z'_2) - f(z_k)= w$
+each $w$ in this open disk centered on $w_0$ is attained exactly $m$ times only by one point in the open disk centered on $z_0$ 
 
-$\implies$ $f(z_1') - f(z_k) - f(z'_2) + f(z_k) = 0$
+so the boundary of $U$ is included in these open disks, and keeping with this, all of $D$ is in these open disks, meaning each point in $f(D)$ has $m$ preimages (counting multiplicities)
 
-$\implies$ $f(z_1') - f(z_2') = 0$ $\implies $$f(z_1') = f(z_2')$, a contradiction 
+If we were to take some $\rho$ with $r < \rho < 1$ and take the image of the circle with radius $\rho$
 
-so the sequence of function $f(z) -f(z_k)$ is a sequence of univalent functions
+with $\gamma(\theta) = \rho e^{i\theta}$, $0 \leq \theta \leq 2\pi$ 
 
-converging to $f(z) - f(\zeta)$
+we'd get a curve that starts and ends at the same point (closed)
 
-$|f(z)-f(z_j)-f(z) - f(\zeta)| = |f(z_j)-f(\zeta)| \rightarrow 0$ for any $z$ in any closed subset in $U$ 
-
-so $f(z) - f(z_k)$ converges normally to $f(z) - f(\zeta)$ 
-
-which means $f(z) - f(\zeta)$ is univalent or constant
-
-if it is constant, that implies that $f(z)$ is constant, a contradiction since it is one-to-one on $U$
-
-so $f(z) - f(\zeta)$ is one-to-one and analytic 
+and since $f(z)$ is one-to-one on the annulus, simple
 
 ##### Chapter VIII, Sec 4, ex. 6
 
 Let $f(z)$ be a meromorphic function on the complex plane, and suppose there is an integer $m$ such that $f^{-1}(w)$ has at most $m$ points for all $w \in \C$. Show that $f(z)$ is a rational function.
 
-let $w_0$ be a point in $\C$ such that there are in $f^{-1}(w_0)$ the maximum number of points $z$ such that $f(z)= w_0$ 
+---
+
+let $w_0​$ be a point in $\C​$ such that there are in $f^{-1}(w_0)​$ the maximum number of points $z​$ such that $f(z)= w_0​$ 
 
 since all other values of $w$ can only be achieved at a number of points less than the number of points that achieve $w_0$, we have that only near the points in $f^{-1}(w_0)$ does $f(z) = w$ 
 

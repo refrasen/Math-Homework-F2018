@@ -321,11 +321,17 @@ let $z_0$ be a point such that $|z| < \rho$
 
 we have that $f(z) - f(z_0)$ has a zero of order $m$, 
 
+also, $f(z)-f(z_0)$ is $1-1$ on the annulus:
+
+$f(z_1)-f(z_0) = f(z_2)-f(z_0)\equiv $$f(z_1) = f(z_2)$ 
+
+so similarly, the curve $f(\gamma) - f(z_0)$ is simple and closed
+
 (since on $|z| = \rho$, $f(z)$ is one-to-one, we have $f(z) - f(z_0)\neq 0$, else a contradiction to one-to-one)
 
 $\int_{|z| = \rho} \frac{f'(z)}{f(z)-f(z_0)}dz = 2\pi (m) $ (since $f(z)-f(z_0)$ is analytic in $D$, there's no singularities)
 
-since the curve of $f(\gamma)$ is a simple closed curve, it must only travel around origin once.
+since the curve of $f(\gamma) - f(z_0)$ is a simple closed curve, it must only travel around origin once.
 
 The increase in argument is therefore $2\pi$ 
 

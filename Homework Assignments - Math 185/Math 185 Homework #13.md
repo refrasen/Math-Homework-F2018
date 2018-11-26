@@ -171,57 +171,13 @@ and $480 - 64 = 416$
 
 so $|f(z)| \geq 416 $ for $|z| = 2$ so $|f(z)| > |h(z)|$ on $|z| = 2$
 
+so we may use Rouche's Theorem: $f(z)$ has the same number of zeros as $f(z)+h(z)$ 
+
 the number of zeros $z^9 + z^5 - 8z^3$ has in $D$:
 
 $z^3(z^6 + z^2 -8)$
 
-so $0$ is a root of multiplicity $3$  
-
-there are $2$ real roots in $D$: $\approx \pm 1.354$ 
-
-we now try to find roots of $g(x) = z^6 + z^2 - 8$ in the top two quadrants (since we have conjugate pairs from here on out)
-
-There are four paths to consider in the 1st quadrant
-
-$C_1$: $|z| = 1$ with $0 \leq \arg z \leq \pi/2$ (going clockwise)
-
-path on the real axis from $1$ to $2$
-
-$C_2: |z| = 2$ with $0 \leq \arg z \leq \pi/2$ (going counterclockwise) 
-
-path on the imaginary axis from $2i$ to $1i$ 
-
-on $C_1$: $z^6$ dominates with $arg f(z) \approx 6 \arg z$ 
-
-so the change here is approximately $-3\pi$ 
-
-and on $C_2$: $3\pi$ 
-
-on the real axis:
-
-$g(1) = -6$, $g(2) = 60$ , and on the real axis the change is $\pi$ 
-
-on the imaginary axis:
-
-$g(iy) = -y^6 -y^2 - 8$
-
-$g(2i) = 608i$, $\arg g(2i) = \pi/2$
-
-$g(i) =i + i + 8i = 10i$,   
-
----
-
-$C_1: |z| = 1$ counterclockwise, $3\pi$
-
-real axis, from $0$ to $1$:
-
-$g(0) = -8$, $g(1) = -6$,, $0 \leq z \leq 1$, so $z^6 + z^2 < 8$, so $g(x) < 0$ 
-
-imaginary axis, from $i$ to $0$ 
-
-$f(i) = 
-
----
+so $0$ is a root of multiplicity $3$, and we have $6$ remaining to find:
 
 $|z^6 + z^2 - 8|$ when $|z| \geq 2$:
 
@@ -241,9 +197,32 @@ $z^2 = r^2(\cos(2\theta) + i\sin(2\theta))$
 
 $z^6 + z^2 - 8 = (r^6\cos(6\theta)+r^2\cos(2\theta)-8) + i (r^6\sin(6\theta) + r^2\sin (2\theta))$
 
-The real part will be at least $-10$ and at most $-8$, which means we never obtain $0​$ within the unit circle or on its boundary
+The real part will be at least $-10$ and at most $-8$, which means we never obtain $0$ within the unit circle or on its boundary
 
-so we must have $6$ roots lying inbetween the circle of radius 1 and the circle of radius 2
+so we must have $6$ roots lying in between the circle of radius 1 and the circle of radius 2
 
 ##### Chapter VIII, Sec. 2 ex. 8
 
+Let $D$ be a bounded domain, and let $f(z)$ and $h(z)$ be meromorphic functions on $D$ that extend to be analytic on $\partial D$. Suppose that $|h(z)| \leq |f(z)|$ on $\partial D$. Show by example that $f(z)$ and $f(z) + h(z)$ can have different numbers of zeros on $D$. What can be said about $f(z)$ and $f(z)+h(z)$
+
+if $|h(z_0)| = |f(z_0)|$ at some point $z_0$
+
+then it is possible that $1 + h(z_0)/f(z_0) = 0$, so the $\arg(1 + h(z)/f(z))$ around a closed boundary curve may not be $0$
+
+$f(z) = -h(z)$, for any polynomial
+
+e.g.:
+
+$f(z) = z$
+
+$h(z) = -z$
+
+$|f(z)| = |h(z)|$ for all $z$ $\in \C$ 
+
+$f(z)$ has $1$ zero at $0$ 
+
+but $f(z)+h(z) = z -z = 0$ has infinitely many zeros
+
+$f(z)$ and $h(z)$ have the same number of zeros and the same number of poles
+
+##### Chapter VIII, Sec. 3 ex. 4

@@ -171,7 +171,79 @@ and $480 - 64 = 416$
 
 so $|f(z)| \geq 416 $ for $|z| = 2$ so $|f(z)| > |h(z)|$ on $|z| = 2$
 
-the number of zeros $z^9 + z^5 - 8z^3$ has
+the number of zeros $z^9 + z^5 - 8z^3$ has in $D$:
+
+$z^3(z^6 + z^2 -8)$
+
+so $0$ is a root of multiplicity $3$  
+
+there are $2$ real roots in $D$: $\approx \pm 1.354$ 
+
+we now try to find roots of $g(x) = z^6 + z^2 - 8$ in the top two quadrants (since we have conjugate pairs from here on out)
+
+There are four paths to consider in the 1st quadrant
+
+$C_1$: $|z| = 1$ with $0 \leq \arg z \leq \pi/2$ (going clockwise)
+
+path on the real axis from $1$ to $2$
+
+$C_2: |z| = 2$ with $0 \leq \arg z \leq \pi/2$ (going counterclockwise) 
+
+path on the imaginary axis from $2i$ to $1i$ 
+
+on $C_1$: $z^6$ dominates with $arg f(z) \approx 6 \arg z$ 
+
+so the change here is approximately $-3\pi$ 
+
+and on $C_2$: $3\pi$ 
+
+on the real axis:
+
+$g(1) = -6$, $g(2) = 60$ , and on the real axis the change is $\pi$ 
+
+on the imaginary axis:
+
+$g(iy) = -y^6 -y^2 - 8$
+
+$g(2i) = 608i$, $\arg g(2i) = \pi/2$
+
+$g(i) =i + i + 8i = 10i$,   
+
+---
+
+$C_1: |z| = 1$ counterclockwise, $3\pi$
+
+real axis, from $0$ to $1$:
+
+$g(0) = -8$, $g(1) = -6$,, $0 \leq z \leq 1$, so $z^6 + z^2 < 8$, so $g(x) < 0$ 
+
+imaginary axis, from $i$ to $0$ 
+
+$f(i) = 
+
+---
+
+$|z^6 + z^2 - 8|$ when $|z| \geq 2$:
+
+$|z^6 + z^2 - 8| \geq |z^6 + z^2| - 8$, and $|z^6 + z^2|$ is at least $2^6 - 2^2 = 60$ (if we consider adding two vectors, one of at least length $2^6$ and the other at least $4$, the shortest a resultant vector can get is if they are going the opposite direction, thus the length of this vector = absolute value subtracting one length from the other)
+
+so we have $|z^6 + z^2 - 8| > 0$ when $|z| \geq 2$ , which means $z^6 + z^2 - 8 \neq 0$ when $|z| \geq 2$ 
+
+so the roots must lie in the circle of radius $2$ 
+
+and when $|z| \leq 1$:
+
+if $z = re^{i\theta}$
+
+$z^6 = r^6(\cos(6\theta) + i \sin(6\theta))$
+
+$z^2 = r^2(\cos(2\theta) + i\sin(2\theta))$
+
+$z^6 + z^2 - 8 = (r^6\cos(6\theta)+r^2\cos(2\theta)-8) + i (r^6\sin(6\theta) + r^2\sin (2\theta))$
+
+The real part will be at least $-10$ and at most $-8$, which means we never obtain $0​$ within the unit circle or on its boundary
+
+so we must have $6$ roots lying inbetween the circle of radius 1 and the circle of radius 2
 
 ##### Chapter VIII, Sec. 2 ex. 8
 

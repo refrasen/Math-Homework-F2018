@@ -287,14 +287,16 @@ $0$ is a zero for $f'(z)-1$ $\implies$ $f'(0) = 1$
 
 ##### Chapter VIII, Sec 4, ex. 4
 
-Let $f(z)$ be an analytic function on the open unit disk $D =$ {$|z| <1$}. Suppose there is an annulus $U =$ {$r < |z| < 1$} such that the restriction of $f(z)$ to $U$ is one-to-one. Show that $f(z)$ is one-to-one on $D​$ 
+Let $f(z)$ be an analytic function on the open unit disk $D =$ {$|z| <1$}. Suppose there is an annulus $U =$ {$r < |z| < 1$} such that the restriction of $f(z)$ to $U$ is one-to-one. Show that $f(z)$ is one-to-one on $D$ 
 
-for each $w_0$ in $f(U)$, there is exactly one $z_0 \in U$ such that $f(z_0) = w_0$ 
+ "Suppose that $f(z)$ is analytic across $\partial D$, and consider the set of $z$ $\in D$ whose image $f(z)$ is not the image of any other point in $D$"
 
-in some open disk with radius $\rho$ around each $z_0$ $\in U$, the values of $f(z)$ on this disk include the disk centered at $w_0$ of some radius $\delta$ so that $N(w) = N(w_0)$ for $|w - w_0| < \delta$
+##### Chapter VIII, Sec 4, ex. 6
 
-let $N(w_0) = m$, and since $f$ is 1-1 on $U$:
+Let $f(z)$ be a meromorphic function on the complex plane, and suppose there is an integer $m$ such that $f^{-1}(w)$ has at most $m$ points for all $w \in \C$. Show that $f(z)$ is a rational function.
 
-on $U$: $f(z) -w_0= (z-z_0)^mg(z)$ for some function $g(z)$ that is analytic at $z_0$ and $g(z_0) \neq 0$
+i.e., the highest number of times that any $w$ $\in \C$ is attained is $m$ 
 
- 
+"Choose $w_0$ such that the number of points in $f^{-1}(w_0)$ is maximum. Then $f(z)$ attains values $w$ near $w_0$ only near points in $f^{-1}(w_0), 1/(f(z)-w_0)$ is bounded at $\infin$, and $f(z)$ is meromorphic on $\C^*$ hence, rational"
+
+let $w_0$ be a point in $\C$ such that there are $f^{-1}(w_0)$ the maximum number of points $z$ such that $f(z)= w_0$ 

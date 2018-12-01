@@ -82,6 +82,97 @@ and we obtain $\frac{(x-h)^2}{a^2} - \frac{y^2}{b^2} = 1$, a hyperbola
 
 ##### 3. Consider the case of a particle moving directly away from the origin at time $t= 0$ in the Newtonian central force system. Find a specific formula for this solution and discuss the corresponding motion of the particle. For which initial conditions does the particle eventually reverse direction?
 
+# Math 123 Chapter 13 problem 3
+
+What does a particle moving away from origin at $t=0$ tell us about how the particle is moving in accordance with this central force system?
+
+What are the initial conditions we want to consider?
+
+- is it position and velocity?
+
+This system is conservative and a central force field.
+
+The system without polar coordinates:
+
+$X' = V$ 
+
+$V' = -\frac{X}{|X|^3}$ 
+
+The system with polar coordinates: (when we have the system as above)
+
+$r' = v_r$
+
+$\theta' = v_\theta/r$
+
+$v'_r = -\frac{1}{r^2} + v_\theta^2/r$ 
+
+$v_\theta' = -v_rv_\theta/r$ 
+
+---
+
+$X' = V$
+
+$m_p V' = -gm_sm_p \frac{X}{|X|^3}$ 
+
+so $V' = -gm_s \frac{X}{|X|^3}$, where $m_s = $ $\text{mass of the sun}$
+
+Things to consider as well:
+
+- restrict attention to particles moving in the plane $\R^2$
+- Configuration space: $C = \R^2 - \{0\}$ 
+- Phase space: $P = (\R^2 - \{0\}\times \R^2)$ 
+  - the collection of all tangent vectors at each point $X \in C$ 
+- $T_X = \{(X, V)| V \in \R^2\}$ : the tangent plane to the configuration at $X$
+- $P = \cup_{X \in C}T_X$
+
+So at each point in the plane $X$, we associate a plane of tangent vectors with it.
+
+Why can we do this again?
+
+-  How does total energy and angular momentum play into this?
+
+Describing each solution curve $(r(t), v(t))$ with $v = r'$ i.e. $(r, v_r)$ 
+
+$r(v)$ (the graph of)
+
+$r' = v_r$
+
+$\frac{dr}{dt} = v_r$
+
+$\frac{d v_r}{dt} = -\frac{1}{r^2} + \frac{v_\theta^2}{r}$ 
+
+$v_\theta' = -\frac{v_rv_\theta}{r}$
+
+$dv_\theta/v_\theta = -\frac{v_r(t)}{r(t)}dt = -\frac{r'(t)}{r(t)}dt$
+
+$\int \frac{1}{v_\theta} dv_\theta = -\int\frac{r'(t)}{r(t)}dt$
+
+$\ln(v_\theta) = -\ln(r) + C$
+
+$v_\theta = Ce^{-\ln(r)} = \frac{C}{r}$, $C = rv_{\theta, 0}$ ?????
+
+$v_\theta^2 = C^2/r^2$, for some constant $C$
+
+ $\frac{dv_r}{dt} = -\frac{1}{r^2} + \frac{C^2}{r^3}$ 
+
+$\frac{dv_r}{dt} = -\frac{r + C^2}{r^3}$
+
+$\frac{dt}{dv_r} = \frac{r^3}{r+C^2}$ 
+
+$\frac{dr}{dt}\frac{dt}{dv_r} = \frac{v_r r^3}{r + C^2}$ 
+
+$\frac{dr}{dv_r} = \frac{v_r r^3}{r + C^2}$  
+
+$x_1' = v_1 \\ x_2'  = v_2 \\ v_1' = -x_1/(x_1^2 + x_2^2)^{3/2} \\ v_2' = -x_2/(x_1^2 + x_2^2)^{3/2}$
+
+$v_1' = -r \cos\theta/r$
+
+$v_2' = -r\sin\theta/r$ 
+
+$(r_0, v_0)$, $r_0 > 0, v_0 > 0$ 
+
+"each solution curve"... so do I try out different $h, l$?
+
 ##### 5. Let $F(X)$ be a force field on $\R^3$. Let $X_0, X_1$ be points in $\R^3$ and let $Y(s)$ be a path in $\R^3$ with $s_0 \leq s \leq s_1$, parametrized by arc length $s$, from $X_0$ to $X_1$. The *work* done in moving a particle along this path is defined to be the integral $\int_{s_0}^{s_1} F(y(s))\cdot y'(s)ds$, where $Y'(s)$ is the unit tangent vector to the path. Prove that the force field is conservative if and only if the work is independent of path. In fact, if $F = -\text{grad V}$, then the work done is $V(X_1) -V(X_0)$ 
 
 Assume the force field is conservative:
@@ -142,6 +233,30 @@ I think either $U = \frac{gm_1m_2}{|X_1 - X_2|}$ so that the signs are switched.
 
 so $E = K + U = \frac{1}{2}(m_1|V_1|^2  + m_2|V_2|^2) + \frac{gm_1m_2}{|X_2-X_1|}$ 
 
-$\dot E = m_1V_1\cdot V_1' + m_2V_2 \cdot V_2'$ + $\text{grad }U\cdot (X_2 - X_1)'$ 
+$\dot E = m_1V_1\cdot V_1' + m_2V_2 \cdot V_2'$ $+ \text{grad}_1U\cdot X_1'$ $+ \text{grad}_2U\cdot X_2'$ 
 
-$ = m_1V_1\cdot(-\text{grad }U)
+$ = V_1\cdot(-\text{grad}_1U)$ $+ V_2 \cdot (-\text{grad}_2U)$ $+ \text{grad}_1U\cdot V_1$ $+ + \text{grad}_2U\cdot V_2 $
+
+$ = 0$ 
+
+so $E$ is constant
+
+##### 10. Define the angular momentum of the system by $l = m_1(X_1 \times V_1) + m_2(X_2 \times V_2)$ and show that $l$ is also a first integral
+
+$l' = m_1(X_1' \times V_1 + X_1 \times V_1') + m_2(X_2' \times V_2 + X_2 \times V_2')$ 
+
+so $X_i' = V_i$, so $X_i' \times V_i = 0$ 
+
+$l' = m_1(X_1 \times X_1'') + m_2(X_2 \times X_2'')$ 
+
+$X_i''$ are scalar multiples of $X_2 - X_1$  if $i = 1$, $X_1 - X_2$ , if $i = 2$ 
+
+$X_1 \times (X_2 - X_1) = (x_2^1(x_3^2 - x_3^1) - x_3^1(x_2^2- x_2^1), x_3^1(x_1^2 - x_1^1) - x_1^1(x_3^2 - x_3^1), x_1^1(x_2^2 - x_2^1) - x_2^1(x_1^2 - x_1^1))$ $= X_1 \times X_2 + X_1 \times (-X_1)$ = $X_1 \times X_2 - X_1 \times X_1$ $= X_1 \times X_2$ 
+
+and similalry, $X_2 \times (X_1 - X_2) = X_2 \times X_1 = - X_1 \times X_2$ 
+
+and we have
+
+$l' = \frac{gm_1m_2}{|X_2 - X_1|^3}(X_1 \times X_2 - X_1 \times X_2)$ $= 0$ 
+
+so since $l' = 0$, $l$ is constant and thus a first integral

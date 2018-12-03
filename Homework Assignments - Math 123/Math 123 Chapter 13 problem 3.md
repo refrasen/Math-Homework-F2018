@@ -6,12 +6,7 @@ What are the initial conditions we want to consider?
 
 - is it position and velocity?
 
-This system is conservative and a central force field. What does this mean?
-
-- so $F(X) = ...$ 
-- In general systems look like this:
-  - $X' = V \\V' = \frac{1}m F(X)$
-- 
+This system is conservative and a central force field.
 
 The system without polar coordinates:
 
@@ -19,22 +14,50 @@ $X' = V$
 
 $V' = -\frac{X}{|X|^3}$ 
 
-where $X \in \R^3$, $V \in \R^3$(? idk about V, but yeah probably)
+
+
+------
+
+The system with polar coordinates: (when we have the system as above)
+
+$r' = v_r$
+
+$\theta' = v_\theta/r$
+
+$v'_r = -\frac{1}{r^2} + v_\theta^2/r$ 
+
+$v_\theta' = -v_rv_\theta/r$ 
+
+------
+
+$r'(t) = v_r(t)$ 
+
+$\theta'(t) = v_\theta(t) /r(t)$ 
+
+$v_\theta(t) = r(t)\theta'(t)$
+
+$v_r'(t) = -\frac{1}{r(t)^2} + r(t)\theta'(t)$ 
+
+$v_\theta' = -\frac{v_r(t)v_\theta(t)}{r(t)}$ 
+
+  
+
+------
+
+$X' = V$
+
+$m_p V' = -gm_sm_p \frac{X}{|X|^3}$ 
+
+so $V' = -gm_s \frac{X}{|X|^3}$, where $m_s = $ $\text{mass of the sun}$
 
 Things to consider as well:
 
 - restrict attention to particles moving in the plane $\R^2$
-
 - Configuration space: $C = \R^2 - \{0\}$ 
-
 - Phase space: $P = (\R^2 - \{0\}\times \R^2)$ 
-
   - the collection of all tangent vectors at each point $X \in C$ 
-
 - $T_X = \{(X, V)| V \in \R^2\}$ : the tangent plane to the configuration at $X$
-
 - $P = \cup_{X \in C}T_X$
-
 
 So at each point in the plane $X$, we associate a plane of tangent vectors with it.
 
@@ -75,19 +98,3 @@ $\frac{dr}{dt}\frac{dt}{dv_r} = \frac{v_r r^3}{r + C^2}$
 $\frac{dr}{dv_r} = \frac{v_r r^3}{r + C^2}$  
 
 $x_1' = v_1 \\ x_2'  = v_2 \\ v_1' = -x_1/(x_1^2 + x_2^2)^{3/2} \\ v_2' = -x_2/(x_1^2 + x_2^2)^{3/2}$
-
-$v_1' = -r \cos\theta/r$
-
-$v_2' = -r\sin\theta/r$ 
-
-$(r_0, v_0)$, $r_0 > 0, v_0 > 0$ 
-
-"each solution curve"... so do I try out different $h, l$?
-
-$r' = v_r$
-
-$\theta' = v_\theta/r$
-
-$v'_r = -\frac{1}{r^2} + v_\theta^2/r$ 
-
-$v_\theta' = -v_rv_\theta/r$ 

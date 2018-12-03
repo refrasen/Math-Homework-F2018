@@ -82,7 +82,59 @@ and we obtain $\frac{(x-h)^2}{a^2} - \frac{y^2}{b^2} = 1$, a hyperbola
 
 ##### 3. Consider the case of a particle moving directly away from the origin at time $t= 0$ in the Newtonian central force system. Find a specific formula for this solution and discuss the corresponding motion of the particle. For which initial conditions does the particle eventually reverse direction?
 
+so I'm assuming "directly away" means the particle is moving in a straight line away from origin
 
+so $\theta' = 0 \implies v_\theta = 0$ so $v_\theta' = 0$ as well and $\theta$ is fixed.
+
+so our system becomes (when $V' = -\frac{X}{|X|^3}$, normalized the constants)
+
+$\frac{dr}{dt} = v$
+
+$\frac{dv}{dt} = -\frac{1}{r^2} $ $\equiv r^2 dv = - dt$ $\implies$  $r^2 v = -t + C$ 
+
+(for simplicity, letting $v = v_r$ )
+
+$r^2 = \frac{-t + C}{v}$ 
+
+$\frac{dt}{dv} = -r^2$ 
+
+$\frac{dr}{dt}\frac{dt}{dv} = \frac{dr}{dv} = v(-r^2)$
+
+$\frac{1}{-r^2} dr = v dv$ ​ 
+
+$\frac{1}{r} = \frac{v^2}{2} +C$ 
+
+$r = \frac{2}{v^2 + C}$  
+
+$r(v) = \frac{2}{v^2 +C}$ 
+
+$r(v(t)) = \frac{2}{v(t)^2 + C}$ 
+
+$r(v(0)) = \frac{2}{v_0^2 + C}$ 
+
+$r(v_0) = \frac{2}{v_0^2 + C}$ 
+
+$C = \frac{2}{r(v_0)} - v_0^2$ (I suppose when $r(v_0) = r_0$ as this is the radius when we are at our initial velocity at $v_0 = v(0)$)
+
+$C = \frac{2}{r_0} - v_0^2$  $\implies r(v) = \frac{2}{v^2 + \frac{2}{r_0}-v_0^2}$ 
+
+so our $v_0 > 0$, since we are initially moving away from origin at $t = 0$ 
+
+and since $\frac{dv}{dt} = -\frac{1}{r^2}$, $v$ is decreasing but also noting that once $ r\rightarrow \infin$, $\frac{dv}{dt} \rightarrow 0$
+
+so one of two things may happen: 1. velocity decreases to below zero before $dv/dt \approx 0$ and the particle begins moving towards origin
+
+2. velocity is still $> 0$ when $dv/dt \approx 0$, and the particle doesn't reverses direction
+
+so we look at $v = 0$, $r(0) = \frac{2}{\frac{2}{r_0} - v_0^2}$ 
+
+so $\frac{2}{r_0} -v_0^2> 0$ for the particle to eventually reverse direction (because $r$ must be $>0$ ) 
+
+if $\frac{2}{r_0} -v_0^2 > 0$ $\implies$ $v^2 + \frac{2}{r_0} - v_0^2 > 0$, for all $v$ and $r(v)$ won't $\rightarrow \infin$  
+
+if $\frac{2}{r_0} -v_0^2 \leq 0$ $\implies$ $v_0^2 - \frac{2}{r_0} \geq 0$ and $v_0^2 > v_0^2 - \frac{2}{r_0}$, so
+
+because $v$ starts at $v_0> 0 $ and decreases as time increases, $v$ will eventually $= v_0^2 - \frac{2}{r_0}$ $\implies$ $r(v) \rightarrow \infin$ as $v \rightarrow v_0^2 - \frac{2}{r_0}$ 
 
 ##### 5. Let $F(X)$ be a force field on $\R^3$. Let $X_0, X_1$ be points in $\R^3$ and let $Y(s)$ be a path in $\R^3$ with $s_0 \leq s \leq s_1$, parametrized by arc length $s$, from $X_0$ to $X_1$. The *work* done in moving a particle along this path is defined to be the integral $\int_{s_0}^{s_1} F(y(s))\cdot y'(s)ds$, where $Y'(s)$ is the unit tangent vector to the path. Prove that the force field is conservative if and only if the work is independent of path. In fact, if $F = -\text{grad V}$, then the work done is $V(X_1) -V(X_0)$ 
 

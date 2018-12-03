@@ -88,35 +88,39 @@ so $\theta' = 0 \implies v_\theta = 0$ so $v_\theta' = 0$ as well and $\theta$ i
 
 so our system becomes (when $V' = -\frac{X}{|X|^3}$, normalized the constants)
 
+however, when $V' = -gmX/|X|^3$ ,where $m$ is the mass of the sun, since
+
+$m_pX'' = -gm_sm_p \frac{X}{|X|^3}$ $\implies$ $X'' = -gm_s\frac{X}{|X|^3}$ so:
+
+$\frac{-gm}{r^2}(\cos\theta, \sin\theta) = -gmX/|X|^3 = (v_r'-v_\theta\theta')(\cos\theta, \sin\theta) + (v_rv_\theta/r + v_\theta')(-\sin\theta, \cos\theta)$ 
+
+$(v_r' -v_\theta \theta') = -gm/r^2$ 
+
+so:
+
 $\frac{dr}{dt} = v$
 
-$\frac{dv}{dt} = -\frac{1}{r^2} $ $\equiv r^2 dv = - dt$ $\implies$  $r^2 v = -t + C$ 
+$\frac{dv}{dt} = -\frac{gm}{r^2} $ $\equiv r^2 dv = - dt$ $\implies$  $r^2 v = -t + C$ 
 
-(for simplicity, letting $v = v_r$ )
+$\frac{dt}{dv} = -r^2/gm$ 
 
-$r^2 = \frac{-t + C}{v}$ 
+$\frac{dr}{dt}\frac{dt}{dv} = \frac{dr}{dv} = v(-r^2)/gm$
 
-$\frac{dt}{dv} = -r^2$ 
+$\frac{gm}{-r^2} dr = v dv$ ​ 
 
-$\frac{dr}{dt}\frac{dt}{dv} = \frac{dr}{dv} = v(-r^2)$
+$\frac{gm}{r} = \frac{v^2}{2} +C$ $\implies \frac{gm}{v^2/2 + C} = r$  
 
-$\frac{1}{-r^2} dr = v dv$ ​ 
+$r = \frac{2gm}{v^2 + C}$  
 
-$\frac{1}{r} = \frac{v^2}{2} +C$ 
+$r(v(t)) = \frac{2gm}{v(t)^2 + C}$ 
 
-$r = \frac{2}{v^2 + C}$  
+$r(v(0)) = \frac{2gm}{v_0^2 + C}$ 
 
-$r(v) = \frac{2}{v^2 +C}$ 
+$r(v_0) = \frac{2gm}{v_0^2 + C}$ 
 
-$r(v(t)) = \frac{2}{v(t)^2 + C}$ 
+$C = \frac{2gm}{r(v_0)} - v_0^2$ (I suppose when $r(v_0) = r_0$ as this is the radius when we are at our initial velocity at $v_0 = v(0)$)
 
-$r(v(0)) = \frac{2}{v_0^2 + C}$ 
-
-$r(v_0) = \frac{2}{v_0^2 + C}$ 
-
-$C = \frac{2}{r(v_0)} - v_0^2$ (I suppose when $r(v_0) = r_0$ as this is the radius when we are at our initial velocity at $v_0 = v(0)$)
-
-$C = \frac{2}{r_0} - v_0^2$  $\implies r(v) = \frac{2}{v^2 + \frac{2}{r_0}-v_0^2}$ 
+$C = \frac{2gm}{r_0} - v_0^2$  $\implies r(v) = \frac{2}{v^2 + \frac{2gm}{r_0}-v_0^2}$ 
 
 so our $v_0 > 0$, since we are initially moving away from origin at $t = 0$ 
 
@@ -126,15 +130,15 @@ so one of two things may happen: 1. velocity decreases to below zero before $dv/
 
 2. velocity is still $> 0$ when $dv/dt \approx 0$, and the particle doesn't reverses direction
 
-so we look at $v = 0$, $r(0) = \frac{2}{\frac{2}{r_0} - v_0^2}$ 
+so we look at $v = 0$, $r(0) = \frac{2}{\frac{2gm}{r_0} - v_0^2}$ 
 
-so $\frac{2}{r_0} -v_0^2> 0$ for the particle to eventually reverse direction (because $r$ must be $>0$ ) 
+so $\frac{2gm}{r_0} -v_0^2> 0$ for the particle to eventually reverse direction (because $r$ must be $>0$ ) 
 
-if $\frac{2}{r_0} -v_0^2 > 0$ $\implies$ $v^2 + \frac{2}{r_0} - v_0^2 > 0$, for all $v$ and $r(v)$ won't $\rightarrow \infin$  
+if $\frac{2gm}{r_0} -v_0^2 > 0$ $\implies$ $v^2 + \frac{2gm}{r_0} - v_0^2 > 0$, for all $v$ and $r(v)$ won't $\rightarrow \infin$  
 
-if $\frac{2}{r_0} -v_0^2 \leq 0$ $\implies$ $v_0^2 - \frac{2}{r_0} \geq 0$ and $v_0^2 > v_0^2 - \frac{2}{r_0}$, so
+if $\frac{2gm}{r_0} -v_0^2 \leq 0$ $\implies$ $v_0^2 - \frac{2gm}{r_0} \geq 0$ and $v_0^2 > v_0^2 - \frac{2gm}{r_0}$, so
 
-because $v$ starts at $v_0> 0 $ and decreases as time increases, $v$ will eventually $= v_0^2 - \frac{2}{r_0}$ $\implies$ $r(v) \rightarrow \infin$ as $v \rightarrow v_0^2 - \frac{2}{r_0}$ 
+because $v$ starts at $v_0> 0 $ and decreases as time increases, $v$ will eventually $= v_0^2 - \frac{2gm}{r_0}$ $\implies$ $r(v) \rightarrow \infin$ as $v \rightarrow v_0^2 - \frac{2gm}{r_0}​$ 
 
 ##### 5. Let $F(X)$ be a force field on $\R^3$. Let $X_0, X_1$ be points in $\R^3$ and let $Y(s)$ be a path in $\R^3$ with $s_0 \leq s \leq s_1$, parametrized by arc length $s$, from $X_0$ to $X_1$. The *work* done in moving a particle along this path is defined to be the integral $\int_{s_0}^{s_1} F(y(s))\cdot y'(s)ds$, where $Y'(s)$ is the unit tangent vector to the path. Prove that the force field is conservative if and only if the work is independent of path. In fact, if $F = -\text{grad V}$, then the work done is $V(X_1) -V(X_0)$ 
 

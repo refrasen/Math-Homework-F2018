@@ -120,7 +120,7 @@ $r(v_0) = \frac{2gm}{v_0^2 + C}$
 
 $C = \frac{2gm}{r(v_0)} - v_0^2$ (I suppose when $r(v_0) = r_0$ as this is the radius when we are at our initial velocity at $v_0 = v(0)$)
 
-$C = \frac{2gm}{r_0} - v_0^2​$  $\implies r(v) = \frac{2}{v^2 + \frac{2gm}{r_0}-v_0^2}​$ 
+$C = \frac{2gm}{r_0} - v_0^2$  $\implies r(v) = \frac{2}{v^2 + \frac{2gm}{r_0}-v_0^2}$ 
 
 so our $v_0 > 0$, since we are initially moving away from origin at $t = 0$ 
 
@@ -194,7 +194,7 @@ and $\frac{\partial U}{\partial x_i^1}= $ $gm_1gm_2 (-\frac{1}{2|X_2 - X_1|^3})(
 
 and $\frac{\partial U}{\partial x_i^2} = -gm_1m_2\frac{x_i^2 - x_i^1}{|X_2 - X_1|^3}$ $ = gm_1m_2 \large \frac{x_i^1 - x_i^2}{|X_1 - X_2|^3}$  (because $|X_1 - X_2| = |X_2 - X_1|$ )
 
-I think either $U = \frac{gm_1m_2}{|X_1 - X_2|}$ so that the signs are switched. If we do that, then we have the proof. 
+I think either $U = \frac{gm_1m_2}{|X_1 - X_2|}​$ so that the signs are switched. If we do that, then we have the proof. 
 
 ##### 9. Show that the total energy $K + U$ of the system is a constant of motion, where $K = \frac{1}{2}(m_1|V_1|^2 + m_2|V_2|^2)$ 
 
